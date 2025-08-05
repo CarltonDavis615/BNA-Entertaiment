@@ -1,0 +1,29 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: #333;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+#eventTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#eventTable th, #eventTable td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+#eventTable th {
+  background-color: #eee;
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "event_name": "Jazz Night at Rudy's",
+    "date": "08/10/25",
+    "category": "Music",
+    "genre": "Jazz",
+    "description": "A smooth jazz set by local favorites in a seated venue.",
+    "price": "$15",
+    "link_info": "https://rudysjazzroom.com/event/jazz-night",
+    "link_tickets": "https://rudysjazzroom.com/tickets/jazz-night",
+    "venue": "Rudy's Jazz Room",
+    "location": "Nashville, TN",
+    "source": "rudysjazzroom.com"
+  },
+  {
+    "event_name": "Art Opening at Zeitgeist",
+    "date": "08/15/25",
+    "category": "Art",
+    "genre": "",
+    "description": "Opening reception for a new local artist showcase.",
+    "price": "Free",
+    "link_info": "https://zeitgeistgallery.com/events/art-opening",
+    "link_tickets": "",
+    "venue": "Zeitgeist Gallery",
+    "location": "Nashville, TN",
+    "source": "zeitgeistgallery.com"
+  }
+]

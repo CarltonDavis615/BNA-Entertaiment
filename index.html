@@ -4,24 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nashville Events</title>
-  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #eee;
+    }
+    #refresh-status {
+      margin-top: 10px;
+      font-style: italic;
+      color: green;
+    }
+  </style>
 </head>
 <body>
   <h1>Nashville Events</h1>
-  <div class="controls">
-    <label for="dateFilter">Show events for:</label>
-    <select id="dateFilter">
-      <option value="today">Today</option>
-      <option value="thisWeek">This Week</option>
-      <option value="nextWeek">Next Week</option>
-      <option value="thisMonth">This Month</option>
-      <option value="nextMonth">Next Month</option>
-      <option value="all">All</option>
-    </select>
-    <button id="refreshButton">🔄 Refresh Events</button>
-    <p id="lastUpdated">Last updated: just now</p>
-  </div>
-  <table id="eventTable">
+  <button onclick="refreshEvents()">🔄 Refresh Events</button>
+  <p id="refresh-status">Last updated: loading...</p>
+
+  <table>
     <thead>
       <tr>
         <th>Date</th>
@@ -32,8 +45,11 @@
         <th>Link</th>
       </tr>
     </thead>
-    <tbody></tbody>
+    <tbody id="events-table-body">
+      <!-- Events will be inserted here -->
+    </tbody>
   </table>
+
   <script src="script.js"></script>
 </body>
 </html>
